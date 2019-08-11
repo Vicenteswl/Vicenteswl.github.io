@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[Hexo Note&Tutorial]]></title>
+    <url>%2F2019%2F08%2F11%2FHEXO-TEST%2F</url>
+    <content type="text"><![CDATA[ThemesNexT安装NexT在终端窗口下，定位到 Hexo 站点目录下。使用 Git checkout 代码： 12$ cd your-hexo-site$ git clone https://github.com/iissnan/hexo-theme-next themes/next 安装完成，打开Hexo站点目录下的_config.yml，找到themes字段(Ctrl+F快速查找)，将值改为next并保存。themes: next之后，使用hexo clean来清理Hexo的缓存。 验证主题首先使用hexo g命令生成静态文件，再使用命令hexo s命令启动本地服务器。 12hexo ghexo s 本地服务器启动成功，用浏览器访问http://localhost:4000，若出现类似如下图片则说明NexT主题安装成功。 主题设定NexT通过Scheme特性为你提供多种不同的外观，目前 NexT 支持三种 Scheme，他们是： Muse - 默认 Scheme，这是 NexT 最初的版本，黑白主调，大量留白 Mist - Muse 的紧凑版本，整洁有序的单栏外观 Pisces - 双栏 Scheme，有着清新的气息 打开next目录下的_config.yml文件(注意:这里的_config.yml与Hexo工作目录下的_config.yml不同)，查找scheme关键字,会发现有三个可选项，将前面的#去掉，即可激活对应的主题外观。 语言设置打开Hexo目录下的_config.yml，查找language关键字，修改其值即可修改语言。例如选用简体中文，配置如下：language: zh-Hans目前 NexT 支持的语言如以下表格所示： 语言 代码 设定示例 English en language: en 简体中文 zh-Hans language: zh-Hans Français fr-FR language: fr-FR Português pt language: pt or language: pt-BR 繁體中文 zh-hk 或者 zh-tw language: zh-hk Русский язык ru language: ru Deutsch de language: de 日本語 ja language: ja Indonesian id language: id Korean ko language: ko 头像设置打开next目录下的_config.yml，查找avatar字段，将前面的#删除，即可激活该功能，后面为图片路径，路径分为如下两种： 地址 值 Hexo站点内地质 将头像放置主题目录下的 source/uploads/（新建 uploads 目录若不存在）配置为：avatar: /uploads/avatar.png 或者 放置在 source/images/ 目录下 配置为：avatar: /images/avatar.png 完整的互联网 URI http://example.com/avatar.png]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>Next</tag>
+      </tags>
+  </entry>
+</search>
